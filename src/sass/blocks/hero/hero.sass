@@ -1,0 +1,123 @@
+.hero
+  padding-top: 16rem
+  padding-bottom: 0
+  background: url(images/content/hero-bg.png), linear-gradient(180deg, #A26AEA 0%, #5F10C3 100%)
+  background-repeat: no-repeat
+  background-position: center top
+  +sm-block
+    padding-top: 10rem
+    +bg-purple
+  .container
+    position: relative
+  &__title-shape
+    position: relative
+    z-index: 1
+    width: 73.5rem
+    margin: 0 0 3.5rem -7rem
+    padding: 8rem 6rem 8rem 7rem
+    background: url(images/general/hero-title-shape.svg) no-repeat center / contain
+    +lg-block
+      width: 69rem
+    +sm-block
+      width: auto
+      margin: 0
+      text-align: center
+    +xs-block
+      margin: 0 -15px
+      padding-right: 15px
+      padding-left: 15px
+      background-size: auto 100%
+  &__title
+    margin-bottom: 1rem
+    font-family: $marvin-font
+    font-size: 4.8rem
+    line-height: 1.375
+    color: $accent
+    +text-gradient($purple, $light-purple)
+    +lg-block
+      font-size: 3.8rem
+    +sm-block
+      font-size: 2.8rem
+  &__subtitle
+    margin: 0
+    font-size: 1.6rem
+    color: $accent
+    line-height: 1.875
+  &__benefits
+    margin-left: 10rem
+    max-width: 38.5rem
+    +lg-block
+      margin-left: 5rem
+    +md-block
+      margin-left: 0
+    &-item
+      position: relative
+      margin-bottom: 2rem
+      padding-left: 7rem
+      color: #fff
+      &:last-child
+        margin-bottom: 0
+      b, strong
+        font-weight: 900
+    &-img
+      position: absolute
+      top: 0
+      left: 0
+      text-align: center
+      width: 5rem
+      height: 5rem
+  &__img
+    position: absolute
+    right: -12rem
+    top: 9rem
+    z-index: 2
+    +lg-block
+      width: 50rem
+    +md-block
+      width: 33rem
+    +sm-block
+      position: relative
+      right: auto
+      top: auto
+      display: block
+      margin: 0 auto
+  &__descr
+    position: relative
+    z-index: 1
+    width: 92.5rem
+    margin-top: 0
+    margin-right: -3rem
+    margin-left: auto
+    padding: 11rem 17rem 7rem 10.5rem
+    transform: translateY(7rem)
+    background: url(images/general/hero-descr-shape.svg) no-repeat center / contain
+    +lg-block
+      width: 88.5rem
+      padding-right: 13rem
+    +md-block
+      width: auto
+      margin-right: 0
+      padding: 7rem 5rem 4rem
+      transform: translateY(3rem)
+    +sm-block
+      transform: none
+      margin-top: 6rem
+      background: none
+      padding: 7rem 0 5rem
+      &::before
+        content: ''
+        position: absolute
+        z-index: -1
+        top: 0
+        left: 50%
+        transform: translateX(-50%)
+        width: 75rem
+        bottom: 0
+        background: url(images/general/hero-descr-shape.svg) no-repeat center top / auto 100%
+    p
+      margin-bottom: 2rem
+      +sm-block
+        br
+          display: none
+      &:last-child
+        margin-bottom: 0

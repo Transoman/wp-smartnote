@@ -1,0 +1,141 @@
+.nav
+  +md-block
+    position: fixed
+    top: 0
+    right: 0
+    z-index: 10
+    width: 32rem
+    height: 100%
+    padding: 7rem 2.5rem
+    +bg-purple
+    box-shadow: 0 0 10px rgba(#000, 0.1)
+    overflow-y: auto
+    transform: translateX(120%)
+    +smooth-scroll
+    +trans
+    &.open
+      transform: translateX(0)
+  &__close
+    display: none
+    position: absolute
+    top: 2rem
+    right: 2rem
+    z-index: 1
+    padding: 0
+    width: 3rem
+    height: 3rem
+    background: none
+    border: 0
+    +md-block
+      display: block
+    &::before, &::after
+      content: ''
+      position: absolute
+      left: 0.3rem
+      width: 80%
+      height: 0.2rem
+      background-color: #fff
+    &::before
+      transform: rotate(45deg)
+    &::after
+      transform: rotate(-45deg)
+    &:focus
+      outline: none
+  &__phone
+    display: none
+    +md-block
+      display: block
+
+.nav-list
+  margin: 0
+  padding: 0
+  list-style: none
+  display: flex
+  align-items: center
+  +md-block
+    display: block
+    margin-bottom: 2rem
+  li
+    margin-right: 4.5rem
+    +md-block
+      margin-right: 0
+      margin-bottom: 1rem
+    &:last-child
+      margin-right: 0
+      +md-block
+        margin-bottom: 0
+  a
+    font-size: 1.8rem
+    font-weight: 500
+    color: #fff
+    letter-spacing: 0.06em
+    +lg-block
+      font-size: 1.6rem
+    &:hover, &:focus
+      color: $accent
+
+.nav-toggle
+  display: none
+  position: absolute
+  right: 15px
+  top: 50%
+  transform: translateY(-70%)
+  width: 28px
+  height: 15px
+  padding: 0
+  margin: 0
+  outline: none
+  border: none
+  background: none
+  z-index: 1
+  cursor: pointer
+  +md-block
+    display: block
+  &:focus
+    outline: none
+  &__line
+    position: relative
+    display: block
+    height: 2px
+    width: 100%
+    background-color: #fff
+    +trans
+    &::after, &::before
+      content: ''
+      position: absolute
+      left: 0
+      display: block
+      height: 2px
+      width: 100%
+      background-color: #fff
+      +trans
+    &::before
+      top: -6px
+    &::after
+      top: 6px
+  &.active
+    .nav-toggle__line
+      background: transparent
+      &::after
+        top: 0
+        transform: rotate(45deg)
+      &::before
+        top: 0
+        transform: rotate(-45deg)
+
+.nav-overlay
+  +md-block
+    position: fixed
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    z-index: 9
+    background-color: rgba(#000, 0.8)
+    backdrop-filter: blur(3px)
+    +trans
+    opacity: 0
+    visibility: hidden
+    &.is-active
+      opacity: 1
+      visibility: visible
