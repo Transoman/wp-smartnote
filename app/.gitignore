@@ -3,4 +3,5 @@ content/plugins/*
 !content/plugins/advanced-custom-fields-pro
 content/cache
 content/ewww
+content/ai1wm-backups
 local-config.php

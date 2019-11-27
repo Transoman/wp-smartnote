@@ -28,7 +28,7 @@
         <ul class="nav-list">
           <li><a href="#advantages">Преимущества</a></li>
           <li><a href="#review">Отзывы</a></li>
-          <li><a href="#order">Заказать</a></li>
+          <li><a href="#s-order">Заказать</a></li>
         </ul>
 
         <?php $phone = get_field( 'phone', 'option' );

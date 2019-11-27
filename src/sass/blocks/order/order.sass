@@ -1,0 +1,175 @@
+.s-order
+  padding-bottom: 9.5rem
+  +sm-block
+    padding-bottom: 3rem
+  &::before
+    content: ''
+    position: absolute
+    left: 61%
+    bottom: -14rem
+    z-index: -1
+    width: 75rem
+    height: 144rem
+    background: url(images/general/shape-4.svg) no-repeat center / contain
+    +sm-block
+      left: 5%
+      bottom: -21rem
+  &__container
+    padding-left: 10rem
+    +lg-block
+      padding-left: 0
+
+.order
+  +row-flex
+  &__left
+    +col
+    +size(6)
+    +size-sm(12)
+    +sm-block
+      .btn
+        display: none
+  &__right
+    +col
+    +size(5)
+    +shift-left(1)
+    +size-sm(12)
+    +sm-block
+      margin-left: 15px
+    &-btn
+      display: none
+      text-align: center
+      +sm-block
+        display: block
+        margin-top: 5rem
+  &__item
+    margin-bottom: 3.5rem
+    +sm-block
+      text-align: center
+    &:last-child
+      margin-bottom: 0
+    &--price
+      display: flex
+      align-items: center
+      +sm-block
+        justify-content: center
+      .order__title
+        margin-bottom: 0
+        margin-right: 2rem
+  &__title
+    margin-bottom: 1rem
+    font-size: 1.6rem
+  &__colors
+    display: flex
+    align-items: center
+    +sm-block
+      justify-content: center
+  &__color
+    margin-right: 2rem
+    &:last-child
+      margin-right: 0
+    &-input
+      @extend .visually-hidden
+      &:checked ~ .order__color-box
+        &::before
+          opacity: 1
+    &-box
+      display: block
+      position: relative
+      z-index: 1
+      &::before
+        content: ''
+        position: absolute
+        top: -0.4rem
+        right: -0.4rem
+        bottom: -0.4rem
+        left: -0.4rem
+        z-index: -1
+        pointer-events: none
+        background-color: #A9A8A8
+        border-radius: 0.5rem
+        opacity: 0
+        +trans
+      &-inner
+        display: block
+        width: 3rem
+        height: 3rem
+        border-radius: 0.3rem
+        border: 0.4rem solid transparent
+        cursor: pointer
+        +trans
+  &__sizes
+    @extend .order__colors
+  &__size
+    @extend .order__color
+    &-input
+      @extend .order__color-input
+      &:checked + .order__size-box
+        &::before
+          opacity: 1
+        .order__size-box-inner
+          border-color: $accent
+    &-box
+      position: relative
+      z-index: 1
+      display: block
+      &::before
+        content: ''
+        position: absolute
+        top: -0.3rem
+        right: -0.3rem
+        bottom: -0.3rem
+        left: -0.3rem
+        z-index: -1
+        pointer-events: none
+        background-color: $accent
+        border-radius: 0.5rem
+        opacity: 0
+        +trans
+      &-inner
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 3rem
+        height: 3rem
+        padding-top: 0.2rem
+        border-radius: 0.3rem
+        border: 0.1rem solid #A9A8A8
+        background-color: #fff
+        cursor: pointer
+        +trans
+  &__price
+    font-size: 3.6rem
+    font-weight: 700
+    line-height: 1
+    &-currency
+      font-size: 1.6rem
+  &__img-wrap
+    position: relative
+    +sm-block
+      max-width: 25rem
+      margin: 0 auto
+    &.is-enabled
+      &::before
+        content: ''
+        position: absolute
+        z-index: -1
+        bottom: 0
+        left: -6rem
+        width: 47rem
+        height: 47rem
+        background: url(images/general/hexagon.svg) no-repeat center / contain
+        +md-block
+          width: 37rem
+          height: 37rem
+      &::after
+        content: ''
+        position: absolute
+        bottom: -3rem
+        left: -9rem
+        width: 16.5rem
+        height: 26.5rem
+        background: url(images/general/pen-2.png) no-repeat center / contain
+        +sm-block
+          width: 11rem
+          height: 21rem
+          left: -4rem

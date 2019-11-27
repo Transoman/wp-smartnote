@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fe38090e68f12465d0b7bba26486f506",
+    "content-hash": "8d320a3bfc7fe0a33775c1992549536e",
     "packages": [
         {
             "name": "composer/installers",
@@ -257,6 +257,26 @@
             "time": "2018-11-09T20:10:38+00:00"
         },
         {
+            "name": "wpackagist-plugin/all-in-one-wp-migration",
+            "version": "7.11",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/all-in-one-wp-migration/",
+                "reference": "tags/7.11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/all-in-one-wp-migration.7.11.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/all-in-one-wp-migration/"
+        },
+        {
             "name": "wpackagist-plugin/clearfy",
             "version": "1.6.2",
             "source": {
@@ -358,15 +378,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "12.5.1",
+            "version": "12.6.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/12.5.1"
+                "reference": "tags/12.6.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.12.5.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.12.6.1.zip",
                 "reference": null,
                 "shasum": null
             },

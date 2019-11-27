@@ -1,6 +1,8 @@
 .form-group
   position: relative
   margin-bottom: 20px
+  &--btn
+    margin-bottom: 0
 .form-field
   width: 100%
   padding: 15px 25px
@@ -8,6 +10,7 @@
   border-radius: 5px
   box-shadow: none
   appearance: none
+  +trans
   &:focus
     outline: none
     border-color: $accent

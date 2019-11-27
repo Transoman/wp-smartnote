@@ -1,0 +1,30 @@
+.slider-controls
+  display: flex
+  align-items: center
+  .swiper-button-prev,
+  .swiper-button-next
+    position: static
+    right: auto
+    left: auto
+    top: auto
+    margin: 0
+  .swiper-button-prev
+    margin-right: 2rem
+
+.swiper-button-prev,
+.swiper-button-next
+  width: 4rem
+  height: 1.6rem
+  margin-top: -0.8rem
+  +trans
+  &::after
+    display: none
+  &:hover
+    svg
+      fill: url(#gradient)
+  svg
+    width: 4rem
+    height: 1.6rem
+    fill: $light-gray
+  &.swiper-button-disabled
+    opacity: 0

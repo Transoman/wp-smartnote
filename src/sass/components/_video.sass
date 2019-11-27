@@ -1,0 +1,64 @@
+.video
+  position: relative
+  width: 100%
+  height: 0
+  padding-bottom: 51.95%
+  background-color: #ccc
+  border-radius: 0.4rem
+  overflow: hidden
+  &__link
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+  &__media
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    border: none
+  &__button
+    position: absolute
+    top: 50%
+    left: 50%
+    z-index: 1
+    display: none
+    padding: 0
+    width: 8.4rem
+    height: 8.4rem
+    border-radius: 50%
+    border: 0
+    background-color: rgba(#fff, 0.9)
+    transform: translate(-50%, -50%)
+    cursor: pointer
+    +trans
+    +r(576)
+      width: 50px
+      height: 50px
+      border-width: 2px
+    &::before
+      content: ''
+      display: block
+      width: 2.4rem
+      height: 2.8rem
+      margin-left: 0.3rem
+      background: linear-gradient(157.1deg, #FC8908 9.69%, #FABD00 100%)
+      clip-path: polygon(0 0, 100% 50%, 0 100%)
+      +r(576)
+        border-width: 9px 0 9px 16px
+    &:hover
+      background-color: #fff
+    &:focus
+      outline: none
+  // Enabled
+  &--enabled
+    cursor: pointer
+    .video__button
+      display: flex
+      align-items: center
+      justify-content: center
+
+//img.video__media
+//  object-fit: cover

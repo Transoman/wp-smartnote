@@ -91,6 +91,11 @@ if ( ! function_exists( 'ith_setup' ) ) :
       'image',
       'video'
     ) );
+
+    /**
+     * Image size
+     */
+    add_image_size( 'ith-thumb', 170, 150, true );
   }
 endif;
 add_action( 'after_setup_theme', 'ith_setup' );
