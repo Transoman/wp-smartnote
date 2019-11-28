@@ -18,7 +18,7 @@ if ( have_rows('home_layout') ):
               <p class="hero__subtitle"><?php the_sub_field( 'subtitle' ); ?></p>
             </div>
 
-            <a href="#s-order" class="hero__btn-order">Купить <br><span>от 1200 ₽</span></a>
+            <a href="#s-order" class="hero__btn-order">Купить <br><span>от 1200 <i class="rub"></i></span></a>
 
             <img src="<?php echo THEME_URL; ?>/images/content/hero-note.png" class="hero__img" alt="Note">
 
@@ -78,14 +78,14 @@ if ( have_rows('home_layout') ):
 
         </div>
 
-        <img src="<?php echo THEME_URL; ?>/images/general/shape-1.svg" class="parallax parallax-1" alt="">
-        <img src="<?php echo THEME_URL; ?>/images/general/shape-2.svg" class="parallax parallax-2" alt="">
-        <img src="<?php echo THEME_URL; ?>/images/general/shape-3.svg" class="parallax parallax-3" alt="">
-        <img src="<?php echo THEME_URL; ?>/images/general/pen.png" class="parallax parallax-4" alt="">
-        <img src="<?php echo THEME_URL; ?>/images/general/pen-2.png" class="parallax parallax-5" alt="">
-        <img src="<?php echo THEME_URL; ?>/images/general/circle-1.svg" class="parallax parallax-6" alt="">
-        <img src="<?php echo THEME_URL; ?>/images/general/circle-1.svg" class="parallax parallax-7" alt="">
-        <img src="<?php echo THEME_URL; ?>/images/general/circle-1.svg" class="parallax parallax-8" alt="">
+        <img src="<?php echo THEME_URL; ?>/images/general/shape-1.svg" class="parallax parallax-1" alt="" data-rellax-speed="0.5">
+        <img src="<?php echo THEME_URL; ?>/images/general/shape-2.svg" class="parallax parallax-2" alt="" data-rellax-speed="0.5">
+        <img src="<?php echo THEME_URL; ?>/images/general/shape-3.svg" class="parallax parallax-3" alt="" data-rellax-speed="0.5">
+        <img src="<?php echo THEME_URL; ?>/images/general/pen.png" class="parallax parallax-4" alt="" data-rellax-speed="0.5">
+        <img src="<?php echo THEME_URL; ?>/images/general/pen-2.png" class="parallax parallax-5" alt="" data-rellax-speed="0.5">
+        <img src="<?php echo THEME_URL; ?>/images/general/circle-1.svg" class="parallax parallax-6" alt="" data-rellax-speed="0.5">
+        <img src="<?php echo THEME_URL; ?>/images/general/circle-1.svg" class="parallax parallax-7" alt="" data-rellax-speed="0.5">
+        <img src="<?php echo THEME_URL; ?>/images/general/circle-1.svg" class="parallax parallax-8" alt="" data-rellax-speed="0.5">
       </section>
 
     <?php elseif ( get_row_layout() == 'review' ): ?>
@@ -177,10 +177,10 @@ if ( have_rows('home_layout') ):
 
         </div>
 
-        <img src="<?php echo THEME_URL; ?>/images/general/circle-3.svg" class="parallax parallax-9" alt="" data-rellax-speed="1">
-        <img src="<?php echo THEME_URL; ?>/images/general/circle-3.svg" class="parallax parallax-10" alt="" data-rellax-speed="1">
-        <img src="<?php echo THEME_URL; ?>/images/general/circle-1.svg" class="parallax parallax-11" alt="" data-rellax-speed="1">
-        <img src="<?php echo THEME_URL; ?>/images/general/pen-3.png" class="parallax parallax-12" alt="" data-rellax-speed="1">
+        <img src="<?php echo THEME_URL; ?>/images/general/circle-3.svg" class="parallax parallax-9" alt="" data-rellax-speed="0.5">
+        <img src="<?php echo THEME_URL; ?>/images/general/circle-3.svg" class="parallax parallax-10" alt="" data-rellax-speed="0.5">
+        <img src="<?php echo THEME_URL; ?>/images/general/circle-1.svg" class="parallax parallax-11" alt="" data-rellax-speed="0.5">
+        <img src="<?php echo THEME_URL; ?>/images/general/pen-3.png" class="parallax parallax-12" alt="" data-rellax-speed="0.5">
       </section>
 
     <?php elseif ( get_row_layout() == 'order' ): ?>
@@ -233,7 +233,7 @@ if ( have_rows('home_layout') ):
 
                   <div class="order__item order__item--price">
                     <p class="order__title">Цена блокнота:</p>
-                    <span class="order__price"><span class="order__price-val">0</span> <span class="order__price-currency">₽</span></span>
+                    <span class="order__price"><span class="order__price-val">0</span> <span class="order__price-currency"><i class="rub"></i></span></span>
                   </div>
 
                   <a href="#" class="btn order-modal_open">Оформить заказ</a>
@@ -254,10 +254,10 @@ if ( have_rows('home_layout') ):
 
         </div>
 
-        <img src="<?php echo THEME_URL; ?>/images/general/circle-1.svg" class="parallax parallax-13" alt="" data-rellax-speed="1">
+        <img src="<?php echo THEME_URL; ?>/images/general/circle-1.svg" class="parallax parallax-13" alt="" data-rellax-speed="0.5">
         <img src="<?php echo THEME_URL; ?>/images/general/circle-3.svg" class="parallax parallax-14" alt="" data-rellax-speed="2">
-        <img src="<?php echo THEME_URL; ?>/images/general/circle-4.svg" class="parallax parallax-15" alt="" data-rellax-speed="1">
-        <img src="<?php echo THEME_URL; ?>/images/general/shape-5.svg" class="parallax parallax-16" alt="" data-rellax-speed="1">
+        <img src="<?php echo THEME_URL; ?>/images/general/circle-4.svg" class="parallax parallax-15" alt="" data-rellax-speed="0.5">
+        <img src="<?php echo THEME_URL; ?>/images/general/shape-5.svg" class="parallax parallax-16" alt="" data-rellax-speed="0.5">
       </section>
 
     <?php endif;

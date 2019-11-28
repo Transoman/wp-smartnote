@@ -1,17 +1,28 @@
 .parallax
   position: absolute
   z-index: -1
+  will-change: transform
   +sm-block
     display: none
   &-1
     top: -12rem
-    right: 90%
+    left: 0
+    +r(1920)
+      right: 90%
+    +md-block
+      display: none
   &-2
     top: 35%
-    left: 90%
+    right: 0
+    +r(1920)
+      left: 90%
   &-3
-    right: 84%
     bottom: -10rem
+    left: 0
+    +r(1920)
+      right: 84%
+    +r(1670)
+      display: none
   &-4
     top: -15rem
     right: 92%
@@ -51,4 +62,10 @@
     left: 76%
   &-16
     bottom: 0
-    right: 89%
+    left: 0
+    +r(1920)
+      right: 89%
+    +lg-block
+      right: 90%
+    +md-block
+      display: none

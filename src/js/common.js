@@ -8,6 +8,18 @@ let svg4everybody = require('svg4everybody'),
   fabcybox = require('@fancyapps/fancybox'),
   Rellax = require('rellax');
 
+jQuery(window).on('load', function () {
+  let preloader = jQuery('.preloader'),
+      loader = preloader.find('.preloader img');
+  loader.fadeOut();
+  preloader.delay(2500).fadeOut('slow');
+  setTimeout(function() {
+    jQuery('html').removeClass('loading');
+    loader.remove();
+    preloader.remove();
+  }, 3000);
+});
+
 jQuery(document).ready(function($) {
   // Toggle nav menu
   let toggleNav = function () {
@@ -225,8 +237,20 @@ jQuery(document).ready(function($) {
         if (target.length) {
           // Only prevent default if animation is actually gonna happen
           event.preventDefault();
+
+          $('nav').removeClass('open');
+          $('.nav-overlay').removeClass('is-active');
+
+          let offset = 0;
+
+          if ($(window).width() < 768) {
+            offset = $('.header').outerHeight();
+          }
+
+          console.log(offset);
+
           $('html, body').animate({
-            scrollTop: target.offset().top
+            scrollTop: target.offset().top - offset
           }, 1000);
         }
       }
@@ -254,6 +278,7 @@ jQuery(document).ready(function($) {
   new Rellax('.parallax', {
     center: true
   });
+
 
 
   toggleNav();

@@ -20,6 +20,16 @@
 html
   font-size: 62.5%
   overflow-x: hidden
+  &.loading
+    overflow: hidden !important
+    body
+      padding-right: 17px
+      +sm-block
+        padding-right: 0
+    .header
+      left: -17px
+      +sm-block
+        left: 0
 
 body
   margin: 0
@@ -32,6 +42,8 @@ body
   color: $main-color
   overflow-x: hidden
   -webkit-font-smoothing: antialiased
+  text-rendering: optimizeLegibility
+  font-kerning: auto
 
 img
   max-width: 100%
@@ -84,3 +96,15 @@ section
 
 .content
   flex: 1 0 auto
+
+.rub
+  display: inline-block
+  font-family: 'rub'
+  speak: none
+  font-style: normal
+  font-weight: normal
+  font-variant: normal
+  text-transform: none
+  line-height: 1
+  &::before
+    content: "\e900"

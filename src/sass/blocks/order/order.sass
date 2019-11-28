@@ -5,12 +5,14 @@
   &::before
     content: ''
     position: absolute
-    left: 61%
+    right: 0
     bottom: -14rem
     z-index: -1
     width: 75rem
     height: 144rem
     background: url(images/general/shape-4.svg) no-repeat center / contain
+    +r(1920)
+      left: 61%
     +sm-block
       left: 5%
       bottom: -21rem
