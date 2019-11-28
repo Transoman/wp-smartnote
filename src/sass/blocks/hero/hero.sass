@@ -43,6 +43,44 @@
     font-size: 1.6rem
     color: $accent
     line-height: 1.875
+  &__btn-order
+    position: absolute
+    top: 55%
+    left: 52%
+    z-index: 3
+    transform: translate(-50%, -50%)
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    width: 17rem
+    height: 17rem
+    background: linear-gradient(0deg, #CE0F0F 15%, #F5392D 100%)
+    border-radius: 50%
+    font-size: 2.4rem
+    font-weight: 700
+    color: #fff
+    line-height: 1.6
+    text-align: center
+    box-shadow: 0 10px 20px rgba(241, 53, 42, 0.3)
+    +lg-block
+      width: 15rem
+      height: 15rem
+    +md-block
+      top: 57%
+      left: 73%
+    +sm-block
+      top: 32%
+      left: 77%
+      width: 10rem
+      height: 10rem
+      font-size: 1.8rem
+    span
+      font-size: 1.8rem
+      +sm-block
+        font-size: 1.4rem
+    &:hover, &:focus
+      color: rgba(#fff, 0.6)
   &__benefits
     margin-left: 10rem
     max-width: 38.5rem

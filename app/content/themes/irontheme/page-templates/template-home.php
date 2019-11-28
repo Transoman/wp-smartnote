@@ -18,6 +18,8 @@ if ( have_rows('home_layout') ):
               <p class="hero__subtitle"><?php the_sub_field( 'subtitle' ); ?></p>
             </div>
 
+            <a href="#s-order" class="hero__btn-order">Купить <br><span>от 1200 ₽</span></a>
+
             <img src="<?php echo THEME_URL; ?>/images/content/hero-note.png" class="hero__img" alt="Note">
 
             <?php if (have_rows( 'adv_list' )): ?>
